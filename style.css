@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline:solid red 2px; */
+    overflow-x: hidden;
+}
+#firstPage{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(145deg, #343a40,#495057);
+    overflow-y: hidden;
+}
+#navBar{
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    background-color: #adb5bd;
+    z-index: 3;
+}
+
+#p7{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    position: relative;
+
+}
+
+
+#p1{
+    font-size: 35px;
+    position: relative;
+    margin: 20px 10px;
+    font-family: cursive;
+}
+#p2{
+    margin: 10px 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#p3,#p4{
+    margin: 20px 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#written_section_one{
+    width: 100vw;
+    height: 500px;
+    top: 100px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#firstPage_lastsection{
+    position: relative;
+    top: -190px;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxDesign{
+    height: 300px;
+    width: 300px;
+
+    border-radius: 36px;
+background: linear-gradient(145deg, #383e44, #2f343a);
+box-shadow:  22px 22px 36px #191c1f,
+             -22px -22px 36px #4f5861;
+             
+
+}
+
+#movingbox{
+    height: 50px;
+    width: 50px;
+    margin: 40px;
+    background-color: #191c1f;
+    position: relative;
+    animation-name: movingboxanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    border-style: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+@keyframes movingboxanimation{
+    0%   {background-color: #4f5861; left:0px; top:0px; border-radius: 50%;}
+    25%  {background-color: #4f5861; left:170px; top:0px;}
+    50%  {background-color:#4f5861; left:170px; top:170px;}
+    75%  {background-color:#4f5861; left:0px; top:170px;}
+    100% {background-color:#4f5861; left:0px; top:0px;}
+}
+#nextpage{
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    overflow-y: hidden;
+}
+#rateus{
+    width: 100vw;
+    height: 700px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #adb5bd;
+}
+#contactpage{
+    width:  100vw;
+    background-color: #191c1f;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    
+}
+#p5{
+    top: 10px;
+    position: absolute;
+    font-size: 25px;
+    
+    
+}
+#contact{
+    margin: 20px;
+}
+
+#bottomnote{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.contactsubdivs{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuimg{
+    width: 50px;
+    height: 40px;
+    right: 40px;
+    top: 10px;
+    position: absolute;
+    display: block;
+}
+#closeimg{
+    width: 50px;
+    height: 45px;
+    right: 40px;
+    top: 10px;
+    position: absolute;
+    display: none;
+}
+#menutab{
+    width: 70vw;
+    height: 500px;
+    position: fixed;
+    z-index: 2;
+    background-color: #8e9194;
+    top: 100px;
+    right: 5px;
+    display: none;
+}
+
+.menutabitems{
+    font-size: 30px;
+    margin: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text12{
+    width: 100vw;
+    height: 350px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.texts{
+    width: 370px;
+    height: 220px;
+    float: left;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #2f343a;
+    color: aliceblue;
+}
+
+#contacttextarea{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footers{
+    font-size: 20px;
+    margin: 3px;
+    overflow-y: hidden;
+}
+
+
+#exitbtn, #exitbtn2{
+    right: 10px;
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    height: 40px;
+    color: red;
+    width: 45px;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    top: 60px;
+    background-color: #4f5861;
+    position: absolute;
+    border: solid 3px black;
+    margin: 10px 0;
+    display: none;
+}
+
+#contactform{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    min-height: 1200px;
+    background-color: white;
+    top: 10%;
+    display: none;
+}
+
+#contactform_name11,#contactform_email11{
+    position: relative;
+    top: 70px;
+    float: left;
+    width: 100vw;
+    margin: 20px 0px;
+    height: 90px;
+}
+.contactform_name1, .contactform_email1{
+    top: 0px;
+    position: relative;
+    float: left;
+    height: 40px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+.contactform_name2, .contactform_email2{
+    top: 0px;
+    position: relative;
+    float: left;
+    height: 40px;
+    margin: 0 20px;
+    border: black 3px solid;
+    overflow: hidden;
+    width: 300px;
+}
+
+#contactform_name,#contactform_email{
+    min-width: 300px;
+    height: 40px;
+    font-size: 20px;
+}
+.p8,.p9{
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#p10{
+    width: 100vw;
+    top: 80px;
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#contactform_description1{
+    width: 100vw;
+    top: 100px;
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#contactform_description{
+    font-size: 15px;
+    padding: 20px;
+}
+
+#contactform_submit{
+    position: absolute;
+    bottom: 180px;
+    font-size: 30px;
+    left: 35%;
+}
+
+
+#homePage{
+    width: 100vw;
+    height:  auto;
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+.displayed{
+    display: block;
+}
